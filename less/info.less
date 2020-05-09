@@ -1,0 +1,63 @@
+//out:temp.css
+.info {
+    padding: 89px 376px 80px 378px;
+    box-sizing: border-box;
+    min-height: 373px;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #8c8c8c;
+    display: flex;
+    justify-content: space-between;
+    &__item {
+        width: 266px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        cursor: pointer;
+        &-icon {
+            display: block;
+        }
+        &-title {
+            font-size: 22px;
+            line-height: 1.2;
+            font-weight: 600;
+            color: #555555;
+            margin: 29px 0 19px 0;
+        }
+        &-text {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 300;
+            margin: 0 0 30px 0;
+        }
+    }
+    &__item:after {
+        content: "";
+        display: block;
+        width: 70px;
+        height: 3px;
+        background-color: #f1eee9;
+    }
+    &__item:hover &__item-icon,
+    &__item:focus &__item-icon
+    {
+        fill: #c7b299;
+    }
+    &__item:hover &__item-title,
+    &__item:focus &__item-title{
+        color: #c7b299;
+    }
+    &__item:hover &__item-text,
+    &__item:focus &__item-text{
+        color: #c7b299;
+    }
+    &__item:hover:after,
+    &__item:focus:after{
+        background-color: #c7b299;
+    }
+}
