@@ -1,0 +1,55 @@
+//out:temp.css
+.presentation {
+    min-height: 705px;
+    background-color: #ccc;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    &__wpr {
+        position: absolute;
+        top: 210px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-btn {
+            width: 100px;
+            height: 100px;
+            outline: none;
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 50%;
+            border: 1px solid transparent;
+            fill: #fff;
+            cursor: pointer;
+        }
+        &-btn:hover {
+            fill: green;
+        }
+        &-btn:active {
+            fill: red;
+        }
+        &-title {
+            font-size: 30px;
+            line-height: 1.2;
+            font-weight: 500;
+            color: #ffffff;
+            margin: 44px 0 29px 0;
+        }
+        &-text {
+            width: 522px;
+            font-family: 'montserrat', 'verdana', sans-serif;
+            font-size: 16px;
+            line-height: 28px;
+            font-weight: 300;
+            color: #ffffff;
+            margin: 0 0 36px 0;
+            text-align: center;
+        }
+        &-time {
+            font-family: 'montserrat', 'verdana', sans-serif;
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 400;
+            color: #c7b299;
+        }
+    }
+}
