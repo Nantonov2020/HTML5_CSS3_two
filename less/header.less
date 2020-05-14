@@ -41,7 +41,7 @@
         width: 637px;
         display: flex;
         justify-content: space-between;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'montserrat', 'verdana', sans-serif;
         &-item {
             list-style-type: none;
         }
@@ -74,14 +74,21 @@
     &__basket:hover {
         opacity: 0.5;
     }
-    &__basket:active {
-        opacity: 0.5;
-        fill: red;
-    }
     &__basket:focus {
         outline: 1px solid #7085f8;
     }
+    &__basket:active {
+        opacity: 0.5;
+        outline: none;
+        fill: red;
+    }
+    
+    &__form{
+        position: relative;
+    }
+    
     &__search {
+        display: block;
         width: 26px;
         height: 26px;
         margin: 0 0 0 28px;
@@ -90,6 +97,31 @@
         outline: none;
         border: none;
         cursor: pointer;
+        
+        &-field{
+            display: block;
+            width: 0;
+            height: 0;
+            outline: none;
+            border: none;
+            background-color: transparent;
+            padding: 5px;
+            box-sizing: border-box;
+            position: absolute;
+            top: 40px;
+            left: 10px;
+            color: #fff;
+        }
+        &-field:focus{
+            width: 150px;
+            height: 20px;
+            border: 2px solid #fff;
+            border-radius: 2px;
+            background-color: #fff;
+            color:#000;
+        }
+        
+        
     }
     &__search:hover {
         opacity: 0.5;
@@ -97,6 +129,10 @@
     &__search:focus {
         outline: 1px solid #7085f8;
     }
+    &__search:active {
+        outline: none;
+    }
+    
     &__down {
         display: flex;
         justify-content: space-between;
@@ -107,14 +143,16 @@
         &-arrow {
             width: 40px;
             height: 73px;
-            background-image: url(../img/left_11970.svg);
             opacity: 0.5;
+            fill: #fff;
         }
-        &-arrow:last-child {
-            background-image: url(../img/right_11969.svg);
-        }
+
         &-arrow:hover {
             opacity: 1;
+        }
+        &-arrow:active {
+            opacity: 1;
+            fill:red;
         }
     }
     &__center {
@@ -138,7 +176,7 @@
             font-size: 16px;
             line-height: 24px;
             font-weight: 300;
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'montserrat', 'verdana', sans-serif;
         }
         &-button {
             margin: 0 auto;

@@ -1,0 +1,58 @@
+//out:temp.css
+.mobile {
+    min-height: 695px;
+    background-color: #fbfaf8;
+    padding: 79px 388px 0 423px;
+    box-sizing: border-box;
+    display: flex;
+    &img {
+        display: block;
+    }
+    &__wpr {
+        padding: 116px 0 0 31px;
+        box-sizing: border-box;
+        &-title {
+            font-size: 30px;
+            line-height: 1.2;
+            font-weight: 600;
+            color: #555555;
+            margin: 0 0 40px 0;
+        }
+        &-text {
+            font-family: 'montserrat', 'verdana', sans-serif;
+            width: 657px;
+            font-size: 16px;
+            line-height: 28px;
+            font-weight: 300;
+            color: #8c8c8c;
+            margin: 0 0 45px 0;
+        }
+        &-list {
+            font-family: 'montserrat', 'verdana', sans-serif;
+            font-size: 16px;
+            line-height: 32px;
+            font-weight: 300;
+            color: #8c8c8c;
+            margin: 0 0 0 60px;
+            &-item {
+                list-style-type: none;
+                position: relative;
+            }
+            &-item:before {
+                content: "";
+                position: absolute;
+                top: 5px;
+                left: -37px;
+                display: block;
+                width: 21px;
+                height: 21px;
+                border-radius: 50%;
+                background-color: transparent;
+                background-image: url(../img/10972.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+        }
+    }
+}
