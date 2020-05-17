@@ -110,7 +110,10 @@
             position: absolute;
             top: 40px;
             left: 10px;
+            font-family: 'montserrat', 'verdana', sans-serif;
+            font-size: 12px;
             color: #fff;
+            transition: width 500ms ease-out;
         }
         &-field:focus{
             width: 150px;
@@ -191,6 +194,8 @@
             text-decoration: none;
             border-radius: 3px;
             color: #fff;
+            transition: color 500ms ease-out,
+                        background-color 500ms ease-out;
         }
         &-button:hover {
             color: #998675;

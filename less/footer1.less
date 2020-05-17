@@ -1,0 +1,183 @@
+//out:temp.css
+.footer1 {
+    min-height: 508px;
+    background-color: #191919;
+    padding: 80px 374px 81px 376px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    &__item {
+        min-height: 347px;
+        width: 260px;
+        &-wpr {
+            display: flex;
+            align-items: center;
+            margin: 0 0 29px 0;
+        }
+        &-title {
+            font-size: 24px;
+            line-height: 50px;
+            font-weight: 700;
+            color: #ffffff;
+            margin: 0;
+        }
+        &-logo {
+            fill: #fff;
+        }
+        &-textlogo {
+            font-size: 34px;
+            line-height: 1.2;
+            font-weight: 400;
+            letter-spacing: -0.04em;
+            color: #ffffff;
+        }
+        &-text {
+            font-family: 'montserrat', 'verdana', sans-serif;
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 300;
+            color: #555555;
+            margin: 0 0 33px 0;
+        }
+        &-link {
+            text-decoration: none;
+            font-family: 'montserrat', 'verdana', sans-serif;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 400;
+            color: #d1d1d1;
+            position: relative;
+        }
+        &-link:after {
+            position: absolute;
+            top: 0px;
+            left: 82px;
+            content: "";
+            display: block;
+            border: 7px solid transparent;
+            border-left: 5px solid #d1d1d1;
+        }
+        &-link:hover {
+            color: green;
+        }
+        &-link:hover:after {
+            border-left: 5px solid green;
+        }
+        &-link:active {
+            color: red;
+        }
+        &-link:active:after {
+            border-left: 5px solid red;
+        }
+        &-linkposts {
+            text-decoration: none;
+            display: block;
+            border-bottom: 2px solid #252525;
+            padding: 19px 0 0 0;
+            box-sizing: border-box;
+        }
+        &-linkposts:last-child {
+            border-bottom: none;
+        }
+        &-time {
+            font-size: 12px;
+            font-family: 'montserrat', 'verdana', sans-serif;
+            line-height: 20px;
+            font-weight: 300;
+            color: #363636;
+        }
+        &-linkposts:hover &-time {
+            color: #fff;
+        }
+        &-linkposts:hover &-textposts {
+            color: #c7b299;
+        }
+        &-linkposts:active &-time {
+            color: red;
+        }
+        &-linkposts:active &-textposts {
+            color: red;
+        }
+        &-textposts {
+            font-family: 'montserrat', 'verdana', sans-serif;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 300;
+            color: #555555;
+            margin: 10px 0 21px 0;
+        }
+        &-linktwitter {
+            display: block;
+            text-decoration: none;
+            border-bottom: 2px solid #252525;
+            padding-bottom: 23px;
+        }
+        &-linktwitter:last-child {
+            border: none;
+        }
+        &-twitter {
+            font-family: 'montserrat', 'verdana', sans-serif;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 300;
+            color: #00bff3;
+        }
+        &-timetwitter {
+            font-family: 'montserrat', 'verdana', sans-serif;
+            font-size: 12px;
+            line-height: 20px;
+            font-weight: 300;
+            color: #363636;
+        }
+        &-texttwitter {
+            font-family: 'montserrat', 'verdana', sans-serif;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 300;
+            color: #555555;
+            margin: 17px 0 0 0;
+        }
+        &-texttwitter2 {
+            color: #959595;
+        }
+        &-linktwitter:hover &-texttwitter {
+            color: #c7b299;
+        }
+        &-linktwitter:hover &-timetwitter {
+            color: #fff;
+        }
+        &-linktwitter:hover &-twitter {
+            color: green;
+        }
+        &-linktwitter:hover &-texttwitter2 {
+            color: green;
+        }
+        &-linktwitter:active &-texttwitter {
+            color: red;
+        }
+        &-linktwitter:active &-timetwitter {
+            color: red;
+        }
+        &-linktwitter:active &-twitter {
+            color: red;
+        }
+        &-linktwitter:active &-texttwitter2 {
+            color: red;
+        }
+        &-imgwpr {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 21px 0 0 0;
+        }
+        &-img {
+            margin: 0 0 10px 0;
+        }
+    }
+    &__item:nth-child(3) {
+        width: 267px;
+    }
+    &__item:nth-child(4) {
+        width: 270px;
+    }
+}

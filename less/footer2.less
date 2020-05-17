@@ -1,0 +1,50 @@
+//out:temp.css
+.footer2 {
+    min-height: 111px;
+    background-color: #111111;
+    padding: 45px 374px 52px 376px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    &__left_text,
+    &__right_text,
+    {
+        color: #555555;
+        font-family: 'montserrat', 'verdana', sans-serif;
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 300;
+    }
+    &__left-link,
+    &__right-link {
+        text-decoration: none;
+        color: #555555;
+        padding: 0 10px 0 10px;
+        border-right: 1px solid #252525;
+    }
+    &__right-link {
+        color: #959595;
+    }
+    &__left-link:nth-child(1) {
+        padding: 0 10px 0 0;
+        color: #959595;
+    }
+    &__left-link:last-child,
+    &__right-link:last-child {
+        border: none;
+    }
+    &__right-link:last-child {
+        padding: 0;
+    }
+    &__right_contex {
+        padding: 0 0 0 10px;
+    }
+    &__left-link:hover,
+    &__right-link:hover {
+        color: #c7b299;
+    }
+    &__left-link:active,
+    &__right-link:active {
+        color: red;
+    }
+}
