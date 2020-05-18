@@ -943,6 +943,40 @@ body {
 .posts__wpr-item:hover .posts__wpr-item-calendar-part2 {
   background-color: #a48d72;
 }
+.posts__pagination {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  top: 195px;
+  left: 133px;
+  z-index: 3;
+  width: 100px;
+}
+.posts__pagination-item {
+  display: block;
+  width: 11px;
+  height: 11px;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+  background-color: #fff;
+  opacity: 0.3;
+  border-radius: 50%;
+}
+.posts__pagination-item-active {
+  background-color: transparent;
+  border: 2px solid #d3c1ad;
+  transform: scale(1.2);
+}
+.posts__pagination-item:hover {
+  background-color: red;
+  border: 2px solid #cebda9;
+  box-sizing: border-box;
+  transform: scale(1.2);
+}
+.posts__pagination-item:active {
+  background-color: #ccc;
+}
 .posts__switch {
   display: flex;
   justify-content: center;

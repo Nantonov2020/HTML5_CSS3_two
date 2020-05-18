@@ -139,6 +139,41 @@
             }
         }
     }
+    &__pagination {
+        display: flex;
+        position: absolute;
+        justify-content: space-between;
+        align-items: center;
+        top: 195px;
+        left: 133px;
+        z-index: 3;
+        width: 100px;
+        &-item {
+            display: block;
+            width: 11px;
+            height: 11px;
+            border: 2px solid transparent;
+            box-sizing: border-box;
+            background-color: #fff;
+            opacity: 0.3;
+            border-radius: 50%;
+            &-active {
+                background-color: transparent;
+                border: 2px solid #d3c1ad;
+                transform: scale(1.2);
+            }
+            &:hover {
+                background-color: red;
+                border: 2px solid #cebda9;
+                box-sizing: border-box;
+                transform: scale(1.2);
+            }
+            
+            &:active{
+                background-color: #ccc;
+            }
+        }
+    }
     &__switch {
         display: flex;
         justify-content: center;
