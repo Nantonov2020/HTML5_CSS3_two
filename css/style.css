@@ -406,6 +406,8 @@ body {
   background-color: #fbfaf8;
   min-height: 700px;
   padding: 83px 344px 0 346px;
+  padding-right: 17.91%;
+  padding-left: 18.02%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -431,13 +433,15 @@ body {
 }
 .realization__img {
   min-height: 482px;
-  width: 1230px;
+  width: 100%;
   background: url(../img/browser_center_10768.jpg) no-repeat center, url(../img/browser_left_10769.jpg) no-repeat left bottom, url(../img/browser_right_10770.jpg) no-repeat right bottom;
 }
 .multiprose {
   background-color: #241c1a;
   min-height: 150px;
   padding: 48px 374px 49px 376px;
+  padding-right: 19.58%;
+  padding-left: 19.48%;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -1393,9 +1397,25 @@ body {
     margin-top: 30px;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 1350px) {
+  .realization {
+    padding: 10px;
+    padding-bottom: 0;
+    min-height: 0px;
+  }
+}
+@media (max-width: 850px) {
   .realization {
     display: none;
+  }
+}
+@media (max-width: 1350px) {
+  .multiprose {
+    padding: 10px;
+    min-height: 0px;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media (max-width: 576px) {
