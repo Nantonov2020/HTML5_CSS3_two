@@ -1,0 +1,21 @@
+//out:temp.css
+@media (max-width:1350px) {
+    .resources {
+        padding: 10px;
+        min-height: 0;
+        &__item {
+            &-digital {
+                font-size: 25px;
+            }
+            &-text {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .resources {
+        display: none;
+    }
+}

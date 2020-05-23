@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Waxom</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -20,7 +21,16 @@
 						<span class="header__logo-text">Waxom</span>
 					</div>
                 </a>
-                <nav>
+                <div class="header__up-wpr">
+                <nav class="header__menu-nav">
+                <label for="header__menu_checkbox" class="header__menu-label">
+                    <div class="header__menu-line"></div>
+                    <div class="header__menu-line"></div>
+                    <div class="header__menu-line"></div>
+                </label>
+                <input id="header__menu_checkbox" type="checkbox" class="header__menu-checkbox">
+                
+                
                     <ul class="header__menu">
                         <li class="header__menu-item"> <a href="#" class="header__menu-link">Home</a> </li>
                         <li class="header__menu-item"> <a href="#" class="header__menu-link header__menu-link-active">About Us</a> </li>
@@ -41,6 +51,8 @@
                     <label for="search" class="header__search"></label>
                     <input type="search" class="header__search-field" id="search">
 				</form>
+                </div>
+           
             </div>
             <div class="header__down">
                 <a href="#" class="header__down-arrow">
@@ -314,10 +326,10 @@
                 </div>
             </section>
             <section class="partners">
-                <a href="#"><img src="img/logo_01_11138.gif" alt="The Barber" width="210" height="127"></a>
-                <a href="#"><img src="img/logo_02_11139.gif" alt="Delicious" width="210" height="210"></a>
-                <a href="#"><img src="img/logo_03_11140.gif" alt="Designers" width="210" height="130"></a>
-                <a href="#"><img src="img/logo_04_11141.gif" alt="Cafe Royal Roaster" width="210" height="164"></a>
+                <a href="#" class="partners__link"><img src="img/logo_01_11138.gif" alt="The Barber" width="210" height="127"></a>
+                <a href="#" class="partners__link"><img src="img/logo_02_11139.gif" alt="Delicious" width="210" height="210"></a>
+                <a href="#" class="partners__link"><img src="img/logo_03_11140.gif" alt="Designers" width="210" height="130"></a>
+                <a href="#" class="partners__link"><img src="img/logo_04_11141.gif" alt="Cafe Royal Roaster" width="210" height="164"></a>
             </section>
         </main>
         <footer class="footer">

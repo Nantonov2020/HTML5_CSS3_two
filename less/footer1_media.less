@@ -1,0 +1,27 @@
+//out:temp.css
+@media (max-width:1919px) {
+    .footer1 {
+        padding-right: 5%;
+        padding-left: 5%;
+        padding-top: 10px;
+        min-height: 0px;
+        &__item {
+            width: 25%;
+        }
+    }
+}
+
+@media (max-width:1200px) {
+    .footer1 {
+        flex-wrap: wrap;
+        &__item {
+            width: 45%;
+        }
+    }
+}
+
+@media (max-width:599px) {
+    .footer1 {
+        display: none;
+    }
+}
