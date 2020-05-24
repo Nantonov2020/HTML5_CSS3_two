@@ -52,24 +52,38 @@
         &-label {
             display: none;
         }
-        &-label{
+        &-label {
             padding: 5px 0 5px 0;
             cursor: pointer;
             width: 49px;
             height: 37px;
             margin-left: 250px;
+            position: relative;
         }
-        
-        &-checkbox:checked + &{
+        &-checkbox:checked ~ & {
             height: auto;
             visibility: visible;
         }
-        
-        &-line{
+        &-checkbox:checked ~ &-label &-line:nth-child(2) {
+            background-color: transparent;
+        }
+        &-checkbox:checked ~ &-label &-line:nth-child(1) {
+            position: absolute;
+            top: 15px;
+            transform: rotate(45deg);
+            
+        }
+        &-checkbox:checked ~ &-label &-line:nth-child(3) {
+            position: absolute;
+            top: 15px;
+            transform: rotate(-45deg);
+        }
+        &-line {
             width: 35px;
             height: 3px;
             background-color: #fff;
             margin: 7px;
+            transition: transform 0.5s;
         }
         &-item {
             list-style-type: none;

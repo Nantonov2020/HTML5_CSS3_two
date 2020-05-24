@@ -131,16 +131,31 @@ body {
   width: 49px;
   height: 37px;
   margin-left: 250px;
+  position: relative;
 }
-.header__menu-checkbox:checked + .header__menu {
+.header__menu-checkbox:checked ~ .header__menu {
   height: auto;
   visibility: visible;
+}
+.header__menu-checkbox:checked ~ .header__menu-label .header__menu-line:nth-child(2) {
+  background-color: transparent;
+}
+.header__menu-checkbox:checked ~ .header__menu-label .header__menu-line:nth-child(1) {
+  position: absolute;
+  top: 15px;
+  transform: rotate(45deg);
+}
+.header__menu-checkbox:checked ~ .header__menu-label .header__menu-line:nth-child(3) {
+  position: absolute;
+  top: 15px;
+  transform: rotate(-45deg);
 }
 .header__menu-line {
   width: 35px;
   height: 3px;
   background-color: #fff;
   margin: 7px;
+  transition: transform 0.5s;
 }
 .header__menu-item {
   list-style-type: none;
@@ -1452,7 +1467,7 @@ body {
     font-size: 14px;
   }
   .projects__menu {
-    width: 97%;
+    width: 88%;
   }
   .projects__menu-btn {
     font-size: 12px;
@@ -1463,7 +1478,7 @@ body {
     width: 95px;
   }
 }
-@media (max-width: 1255px) {
+@media (max-width: 1919px) {
   .presentation {
     display: none;
   }
@@ -1475,7 +1490,7 @@ body {
     min-height: 300px;
   }
   .mobile__img {
-    width: 100%;
+    width: 40%;
     height: 100%;
   }
   .mobile__wpr {
@@ -1493,22 +1508,30 @@ body {
     min-height: 0px;
   }
   .mobile__img {
-    width: 150px;
-    height: 100%;
+    display: none;
   }
   .mobile__wpr-title {
     font-size: 18px;
     margin-bottom: 10px;
+    text-align: center;
   }
   .mobile__wpr-text {
     font-size: 10px;
     margin-bottom: 10px;
     line-height: 20px;
+    text-align: center;
   }
   .mobile__wpr-list {
     font-size: 10px;
     line-height: 20px;
     margin-left: 15px;
+    background-image: url(../img/iphone_in_hand_10962.png);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    min-height: 222px;
+  }
+  .mobile__wpr-list-item {
+    margin-left: 130px;
   }
   .mobile__wpr-list-item:before {
     width: 10px;
@@ -1578,6 +1601,7 @@ body {
   .partners {
     padding: 5px;
     min-height: 0px;
+    justify-content: center;
   }
   .partners__link {
     transform: scale(0.4);
