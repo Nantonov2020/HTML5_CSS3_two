@@ -1,0 +1,39 @@
+//out:temp.css
+@media (max-width:1350px) {
+    .partners {
+        padding: 30px;
+        min-height: 0px;
+        &__link {
+            transform: scale(0.7);
+            width: 25%;
+        }
+    }
+}
+
+@media (max-width:900px) {
+    .partners {
+        padding: 15px;
+        &__link {
+            transform: scale(0.5);
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .partners {
+        padding: 5px;
+        min-height: 0px;
+        justify-content: center;
+        &__link {
+            transform: scale(0.4);
+        }
+    }
+}
+
+@media (max-width:500px) {
+    .partners {
+        &__link {
+            transform: scale(0.3);
+        }
+    }
+}

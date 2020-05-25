@@ -1,0 +1,60 @@
+//out:temp.css
+@media (max-width:1350px) {
+    .mobile {
+        padding: 5px;
+        padding-bottom: 0;
+        min-height: 300px;
+        &__img {
+            width: 40%;
+            height: 100%;
+        }
+        &__wpr {
+            padding-top: 5px;
+            &-text {
+                font-size: 14px;
+            }
+            &-list {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .mobile {
+        min-height: 0px;
+        &__img {
+            display: none;
+        }
+        &__wpr {
+            &-title {
+                font-size: 18px;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+            &-text {
+                font-size: 10px;
+                margin-bottom: 10px;
+                line-height: 20px;
+                text-align: center;
+            }
+            &-list {
+                font-size: 10px;
+                line-height: 20px;
+                margin-left: 15px;
+                background-image: url(../img/iphone_in_hand_10962.png);
+                background-repeat: no-repeat;
+                background-size: 30%;
+                min-height: 222px;
+                &-item {
+                    margin-left: 130px;
+                }
+                &-item:before {
+                    width: 10px;
+                    height: 10px;
+                    left: -20px;
+                }
+            }
+        }
+    }
+}
